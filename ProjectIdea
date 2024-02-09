@@ -1,3 +1,6 @@
- Develop an AI algorithm trained on plant species-specific data to analyze sensor readings and assess plant health status. The algorithm uses machine learning techniques to identify patterns and correlations between sensor data and plant water requirements.
-Decision-Making Module: Based on the analysis of sensor data and plant health indicators, the system's decision-making module determines which plants require watering and calculates the optimal amount of water needed for each plant.
-Provide a user-friendly interface, such as a mobile app or web dashboard, for users to monitor plant health status, customize watering settings, and receive alerts or notifications when watering is needed.
+ Develop an AI algorithm trained on plant species-specific data to analyze sensor readings and assess plant health status. The algorithm 
+uses machine learning techniques to identify patterns and correlations between sensor data and plant water requirements.
+Decision-Making Module: Based on the analysis of sensor data and plant health indicators, the system's decision-making module determines 
+which plants require watering and calculates the optimal amount of water needed for each plant.
+Provide a user-friendly interface, such as a mobile app or web dashboard, for users to monitor plant health status, customize watering 
+settings, and receive alerts or notifications when watering is needed.
