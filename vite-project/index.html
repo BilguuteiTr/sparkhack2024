@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Plant Watering Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorLens - Discover Recipes Through Photos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>Plant Watering Assistant</h1>
-    <p>Upload a photo of your plant to determine if it needs water.</p>
-   
-    <form id="uploadForm">
-        <input type="file" id="plantImage" accept="image/*">
-        <button type="submit">Analyze Plant</button>
-    </form>
-   
-    <div id="result"></div>
-</div>
-
+    <div class="container">
+        <header>
+            <h1>FlavorLens</h1>
+            <p>Discover Recipes Through Photos</p>
+        </header>
+        <main>
+            <section class="upload-section">
+                <input type="file" id="food-photo" accept="image/*">
+                <button onclick="processImage()">Upload Photo</button>
+            </section>
+            <section class="recipes-section" id="recipes">
+                <!-- Recipes will be displayed here -->
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
