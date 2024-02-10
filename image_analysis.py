@@ -60,3 +60,34 @@ def detect_labels_from_image():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('upload-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    var formData = new FormData();
+    var imageFile = document.getElementById('image-input').files[0];
+    formData.append('file', imageFile);
+
+    // Update the URL to where your Flask app is hosted (localhost for development)
+    fetch('/predict', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.getElementById('prediction-result').innerText = 
+            'Prediction: ' + data.prediction + ', Probability: ' + data.probability;
+    })
+    .catch(error => console.error('Error:', error));
+});
