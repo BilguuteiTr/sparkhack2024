@@ -1,56 +1,86 @@
-/* style.css */
 body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.1);
 }
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
 
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
 
-h1 {
-    color: #333;
+
+header {
+  background-color: #ff7043;
+  color: #151414;
+  padding: 20px 0;
+  border: bottom #dd6b3d;;
 }
 
-p {
-    color: #666;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-#uploadForm {
-    margin-top: 20px;
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
 }
 
-#uploadForm input[type="file"] {
-    margin-bottom: 10px;
+
+.upload-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-#uploadForm button {
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+.upload-section input[type="file"] {
+  margin: 10px 0;
 }
 
-#uploadForm button:hover {
-    background-color: #45a049;
+.upload-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-#result {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #e7e7e7;
-    display: none; /* Hide initially */
+.upload-section button:hover {
+  background-color: #45a049;
+}
+
+
+.recipes-section {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  header p {
+      font-size: 1rem;
+  }
 }
