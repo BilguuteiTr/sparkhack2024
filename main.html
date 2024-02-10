@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Find Recipes</h1>
+    <form>
+        <input type="file" name="file" accept="image/*" id="fileInput">
+        <button onclick="uploadFile(); return false" type="submit">Upload</button>
+    </form>
+
+    <div id="recipesContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
