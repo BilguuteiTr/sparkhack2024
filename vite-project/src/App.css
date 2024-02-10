@@ -1,9 +1,10 @@
 /* style.css */
-body, html {
+body,
+html {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 1;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -15,7 +16,7 @@ body, html {
 }
 
 h1 {
-  color: #333;
+  color: #503;
 }
 
 p {
@@ -26,14 +27,14 @@ p {
   margin-top: 20px;
 }
 
-#uploadForm input[type="file"] {
+#uploadForm input[type='file'] {
   margin-bottom: 10px;
 }
 
 #uploadForm button {
   cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #27d12d;
+  color: rgb(23, 173, 196);
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -52,5 +53,5 @@ p {
   margin-top: 20px;
   padding: 10px;
   background-color: #e7e7e7;
-  display: none; /* Hide initially */
+  display: none;
 }
