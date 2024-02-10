@@ -2,6 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgba(0,0,0,0.1);
 }
 
 
@@ -22,9 +23,9 @@ body {
 
 header {
   background-color: #ff7043;
-  color: #fff;
+  color: #151414;
   padding: 20px 0;
-  border-bottom: 5px solid #dd6b3d;
+  border: bottom #dd6b3d;;
 }
 
 header h1 {
